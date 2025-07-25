@@ -6,7 +6,7 @@ jobs:
     - name: "job one"
       vm:
         create:
-          name:  my_custom_name #custom identifier string
+          name:  imag_11
       script:
         - echo "condition with job oneeee"
         - echo $TRAVIS_COMMIT_MESSAGE
