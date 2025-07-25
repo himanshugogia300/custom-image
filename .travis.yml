@@ -2,7 +2,7 @@ os: linux
 dist: focal
 vm:
   create:
-    name: linuximage1
+    name: linuximage2
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
