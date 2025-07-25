@@ -1,13 +1,12 @@
 os: linux
-dist: jammy
-
-jobs:
-  include:
-    - name: "job one"
-      vm:
-        create:
-          name:  imag_11
-      script:
-        - echo "condition with job oneeee"
-        - echo $TRAVIS_COMMIT_MESSAGE
-        - sleep 50
+dist: focal
+vm:
+  create:
+    name: custom_Himanshu_example
+before_install:
+  - sudo apt-get -y install libxml2-dev
+addons:
+  apt:
+    update: true
+script:
+  - echo "OK8"
