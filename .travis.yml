@@ -2,7 +2,7 @@ os: linux
 dist: focal
 vm:
   create:
-    name: custom_Himanshu_example_Linux
+    name: custom_image1
 before_install:
   - sudo apt-get -y install libxml2-dev
 addons:
